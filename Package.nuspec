@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>NetIntrinsics</id>
+    <version>1.0.0</version>
+    <authors>Anton Drachev</authors>
+    <owners>Anton Drachev</owners>
+    <licenseUrl>https://raw.githubusercontent.com/omgtehlion/netintrinsics/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/omgtehlion/netintrinsics</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>x86_64 intrinsics for .NET</description>
+    <copyright />
+  </metadata>
+</package>
