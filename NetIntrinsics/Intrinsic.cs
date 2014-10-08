@@ -75,6 +75,11 @@ namespace System
             return bsIndex64[((ulong)(value ^ (value - 1)) * debruijn64) >> 58];
         }
 
+        public static int BitScanForward(ulong value)
+        {
+            return BitScanForward((long)value);
+        }
+
         /// <summary>Finds position of the most significant bit set</summary>
         /// <param name="value">bitboard, != 0</param>
         [ReplaceWith("48 0F BD C1 90" /* bsr rax, rcx | nop */)]
@@ -97,6 +102,11 @@ namespace System
             value |= value >> 16;
             value |= value >> 32;
             return bsIndex64[((ulong)value * debruijn64) >> 58];
+        }
+
+        public static int BitScanReverse(ulong value)
+        {
+            return BitScanReverse((long)value);
         }
     }
 }
