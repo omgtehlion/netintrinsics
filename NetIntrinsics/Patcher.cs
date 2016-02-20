@@ -134,6 +134,7 @@ namespace NetIntrinsics
         {
             foreach (var expected in new[] {
                     new byte[] { 0x53, 0x48, 0x83, 0xEC, 0x20 },
+                    new byte[] { 0x56, 0x48, 0x83, 0xEC, 0x20 },
                     new byte[] { 0x48, 0x89, 0x54, 0x24 },
                     new byte[] { 0x48, 0x83, 0xEC, 0x28 },
                 }) {
