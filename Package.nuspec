@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>NetIntrinsics</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <authors>Anton Drachev</authors>
     <owners>Anton Drachev</owners>
     <licenseUrl>https://raw.githubusercontent.com/omgtehlion/netintrinsics/master/LICENSE</licenseUrl>
