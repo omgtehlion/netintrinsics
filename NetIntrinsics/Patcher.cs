@@ -77,6 +77,8 @@ namespace NetIntrinsics
             }
             // check call target
             var calltarget = ptr + *(int*)(ptr + 1) + 5;
+
+            // skip jumps
             while (*calltarget == 0xE9) {
                 var delta = *(int*)(calltarget + 1) + 5;
                 calltarget += delta;
@@ -153,7 +155,7 @@ namespace NetIntrinsics
             return false;
         }
 
-        internal static string PatchClass(Type type)
+        public static string PatchClass(Type type)
         {
             if (Error != null) {
                 return "Error: " + Error;
